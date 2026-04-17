@@ -1,0 +1,21 @@
+{
+  "name": "dairy-local",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web",
+    "apps/server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace @dairy-local/server\" \"npm run dev --workspace @dairy-local/web\"",
+    "dev:web": "npm run dev --workspace @dairy-local/web",
+    "dev:server": "npm run dev --workspace @dairy-local/server",
+    "build": "npm run build:web && npm run build:server",
+    "build:web": "npm run build --workspace @dairy-local/web",
+    "build:server": "npm run build --workspace @dairy-local/server",
+    "lint": "npm run lint --workspace @dairy-local/web && npm run lint --workspace @dairy-local/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

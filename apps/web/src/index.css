@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  color: #1f2937;
+  background: #f6f2eb;
+  font-family:
+    "Noto Serif SC",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    serif;
+  --surface: #f4f0e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.35)),
+    var(--surface);
+  color: #1f2937;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(163, 191, 173, 0.35);
+}
