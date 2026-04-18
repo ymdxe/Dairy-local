@@ -95,7 +95,7 @@ export function EntryForm({
                 className={cn(
                   'rounded-2xl border px-4 py-3 text-left transition',
                   formData.mood === option.value
-                    ? 'border-slate-900 bg-slate-900 text-white'
+                    ? 'border-stone-300 bg-stone-100 text-slate-800 shadow-sm'
                     : 'border-white/70 bg-white/75 text-slate-700 hover:bg-white',
                 )}
                 onClick={() => onFieldChange('mood', option.value as MoodType)}

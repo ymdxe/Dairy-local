@@ -44,7 +44,9 @@ export function AppShell() {
                     className={({ isActive }) =>
                       cn(
                         'rounded-full px-4 py-2 text-sm transition',
-                        isActive ? 'bg-slate-900 text-white' : 'bg-white/80 text-slate-600 hover:bg-white',
+                        isActive
+                          ? 'bg-stone-200/95 text-slate-800 ring-1 ring-stone-300 shadow-sm'
+                          : 'bg-white/80 text-slate-600 hover:bg-white',
                       )
                     }
                   >
